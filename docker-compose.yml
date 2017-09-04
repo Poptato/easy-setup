@@ -1,0 +1,52 @@
+version: '3'
+services:
+  db:
+    image: rethinkdb:2.3.5
+    ports:
+      - 4000:8080
+
+  discovery-service:
+    build: ./discovery-service
+    working_dir: /usr/app
+    ports:
+      - 4001:4000
+    environment:
+      - MOVIE_SERVICE_HOST=movie-service
+      - SHOW_SERVICE_HOST=show-service
+      - ORDER_SERVICE_HOST=order-service
+
+  movie-service:
+    build: ./movie-service
+    working_dir: /usr/app
+    depends_on:
+      - db
+    ports:
+      - 4002:4000
+    environment:
+      - DB_HOST=db
+    command: ["npm", "run", "test"]
+
+  order-service:
+    build: ./order-service
+    working_dir: /usr/app
+    depends_on:
+      - db
+    ports:
+      - 4003:4000
+    environment:
+      - DB_HOST=db
+      - SHOW_SERVICE_HOST=show-service
+      - MOVIE_SERVICE_HOST=movie-service
+    command: ["npm", "run", "test"]
+
+  show-service:
+    build: ./show-service
+    working_dir: /usr/app
+    depends_on:
+      - db
+    ports:
+      - 4004:4000
+    environment:
+      - DB_HOST=db
+      - MOVIE_SERVICE_HOST=movie-service
+    command: ["npm", "run", "test"]
