@@ -1,0 +1,12 @@
+[submodule "discovery-service"]
+	path = discovery-service
+	url = https://github.com/Poptato/discovery-service
+[submodule "movie-service"]
+	path = movie-service
+	url = https://github.com/Poptato/movie-service
+[submodule "show-service"]
+	path = show-service
+	url = https://github.com/Poptato/show-service
+[submodule "order-service"]
+	path = order-service
+	url = https://github.com/Poptato/order-service
