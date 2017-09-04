@@ -28,7 +28,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1504554758000" expanded="true" signature="408:2187" ph="{...}" />
+                <marker date="1504554758000" expanded="true" signature="2170:2176" ph="{&quot;showId&quot;: Show3...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -269,12 +272,12 @@
       <option name="presentableId" value="Default" />
       <updated>1504552867095</updated>
       <workItem from="1504552868441" duration="1062000" />
-      <workItem from="1504554664564" duration="31000" />
+      <workItem from="1504554664564" duration="250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1093000" />
+    <option name="totallyTimeSpent" value="1312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -331,7 +334,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1504554758000" expanded="true" signature="408:2187" ph="{...}" />
+            <marker date="1504554758000" expanded="true" signature="2170:2176" ph="{&quot;showId&quot;: Show3...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -395,7 +401,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1504554758000" expanded="true" signature="408:2187" ph="{...}" />
+            <marker date="1504554758000" expanded="true" signature="2170:2176" ph="{&quot;showId&quot;: Show3...}" />
+          </folding>
         </state>
       </provider>
     </entry>
