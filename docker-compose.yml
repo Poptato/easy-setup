@@ -11,9 +11,9 @@ services:
     ports:
       - 4001:4000
     environment:
-      - MOVIE_SERVICE_HOST=movie-service
-      - SHOW_SERVICE_HOST=show-service
-      - ORDER_SERVICE_HOST=order-service
+      - MOVIE_SERVICE_HOST=http://movie-service:4000
+      - SHOW_SERVICE_HOST=http://show-service:4000
+      - ORDER_SERVICE_HOST=http://order-service:4000
 
   movie-service:
     build: ./movie-service
@@ -35,8 +35,8 @@ services:
       - 4003:4000
     environment:
       - DB_HOST=db
-      - SHOW_SERVICE_HOST=show-service
-      - MOVIE_SERVICE_HOST=movie-service
+      - SHOW_SERVICE_HOST=http://show-service:4000
+      - MOVIE_SERVICE_HOST=http://movie-service:4000
     command: ["npm", "run", "test"]
 
   show-service:
@@ -48,5 +48,5 @@ services:
       - 4004:4000
     environment:
       - DB_HOST=db
-      - MOVIE_SERVICE_HOST=movie-service
+      - MOVIE_SERVICE_HOST=http://movie-service:4000
     command: ["npm", "run", "test"]
