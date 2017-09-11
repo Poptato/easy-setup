@@ -1,0 +1,64 @@
+{
+  "cardNumber": "1234-4312-5678-5678",
+  "customer": {
+    "birthday": "1995-03-03T22:00:00.000Z",
+    "firstName": "Nati",
+    "gender": "male",
+    "id": "313247512",
+    "lastName": "Oren"
+  },
+  "customerId": "313247512",
+  "id": "17eebf76-a81a-446b-9465-d0713d3c4377",
+  "showId": "c95d1fce-58a8-4046-9b46-57ccdf064461",
+  "tickets": 2,
+  "show": {
+    "availableSeats": 40,
+    "cinema": {
+      "address": "Lod",
+      "id": "6de5d16c-3762-4472-9497-9d2d39b21bec",
+      "name": "Globos Max"
+    },
+    "cinemaId": "6de5d16c-3762-4472-9497-9d2d39b21bec",
+    "id": "c95d1fce-58a8-4046-9b46-57ccdf064461",
+    "movieId": "4fc42ea3-9918-4f69-b27c-a899c5c47af4",
+    "theater": {
+      "cinemaId": "6de5d16c-3762-4472-9497-9d2d39b21bec",
+      "id": "a6dca98f-33cd-46ec-ae9a-792f747c1800",
+      "name": "GlobosMax 1",
+      "seats": 40
+    },
+    "theaterId": "a6dca98f-33cd-46ec-ae9a-792f747c1800",
+    "time": "2017-10-31T22:00:00.000Z",
+    "movie": {
+      "awards": [
+        {
+          "category": "Best Potato",
+          "celebId": "54b0d91d-8c5f-40cb-83da-152160ba7492",
+          "ceremony": "2015-01-31T22:00:00.000Z",
+          "id": "6410731e-2631-40f9-a0f0-93ab98b50529",
+          "movieId": "4fc42ea3-9918-4f69-b27c-a899c5c47af4"
+        },
+        {
+          "category": "Best Director",
+          "celebId": "b4ebd9b6-11e0-4a24-b6c8-cf86202aea49",
+          "ceremony": "2014-06-03T21:00:00.000Z",
+          "id": "122d56bf-5c12-4746-939a-6792abcd333f",
+          "movieId": "4fc42ea3-9918-4f69-b27c-a899c5c47af4"
+        }
+      ],
+      "cast": [],
+      "director": {
+        "birthday": "1995-03-11T22:00:00.000Z",
+        "firstName": "Idan",
+        "gender": "male",
+        "id": "b4ebd9b6-11e0-4a24-b6c8-cf86202aea49",
+        "lastName": "Asraf"
+      },
+      "directorId": "b4ebd9b6-11e0-4a24-b6c8-cf86202aea49",
+      "duration": 120,
+      "id": "4fc42ea3-9918-4f69-b27c-a899c5c47af4",
+      "release": "2005-04-02T21:00:00.000Z",
+      "title": "Avengers"
+    }
+  }
+}

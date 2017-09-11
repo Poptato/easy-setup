@@ -24,7 +24,7 @@ services:
       - 4002:4000
     environment:
       - DB_HOST=db
-    command: ["npm", "run", "test"]
+    command: ["npm", "run", "start:preloaded"]
 
   order-service:
     build: ./order-service
@@ -37,7 +37,7 @@ services:
       - DB_HOST=db
       - SHOW_SERVICE_HOST=http://show-service:4000
       - MOVIE_SERVICE_HOST=http://movie-service:4000
-    command: ["npm", "run", "test"]
+    command: ["npm", "run", "start:preloaded"]
 
   show-service:
     build: ./show-service
@@ -49,4 +49,4 @@ services:
     environment:
       - DB_HOST=db
       - MOVIE_SERVICE_HOST=http://movie-service:4000
-    command: ["npm", "run", "test"]
+    command: ["npm", "run", "start:preloaded"]
