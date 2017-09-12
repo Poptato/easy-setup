@@ -50,10 +50,3 @@ services:
       - DB_HOST=db
       - MOVIE_SERVICE_HOST=http://movie-service:4000
     command: ["npm", "run", "start:preloaded"]
-
-  web-client:
-    build: ./web-client
-    ports:
-      - 4005:4000
-    depends_on:
-      - discovery-service
